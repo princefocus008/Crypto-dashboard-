@@ -1,0 +1,151 @@
+/* General styling */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #ecf0f1; /* Light mode background */
+  color: black; /* Light mode text */
+}
+
+.App.dark-mode {
+  background-color: #2c3e50; /* Dark mode background */
+  color: white; /* Dark mode text */
+}
+
+.App-header {
+  margin-bottom: 20px;
+}
+
+/* Search bar styling */
+.top-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+  background-color: #fff; /* White search bar for light mode */
+  color: black;
+}
+
+.dark-mode .search-bar {
+  background-color: #34495e; /* Dark mode search bar */
+  color: white;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #3498db; /* Primary color for buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.dark-mode-toggle {
+  background-color: #f39c12; /* Orange color for the dark mode toggle */
+}
+
+.dark-mode .dark-mode-toggle {
+  background-color: #34495e; /* Gray color for dark mode toggle in dark mode */
+}
+
+/* Cryptocurrency list styling */
+.crypto-list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.crypto-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.crypto-item {
+  background-color: #ecf0f1; /* Light gray for crypto item in light mode */
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center content horizontally */
+  transition: transform 0.2s; /* Add a smooth hover effect */
+  text-align: center; /* Center text and image */
+}
+
+.crypto-item:hover {
+  transform: scale(1.05); /* Enlarge slightly on hover */
+}
+
+.dark-mode .crypto-item {
+  background-color: #34495e; /* Dark gray for crypto item in dark mode */
+}
+
+.crypto-image {
+  width: 50px; /* Increase the size for more emphasis */
+  height: 50px;
+  margin-bottom: 10px; /* Add space between the image and text */
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+  color: #3498db; /* Primary color for pagination */
+}
+
+.pagination .active {
+  font-weight: bold;
+  color: #2ecc71; /* Green for the active page */
+}
+
+/* Add hover effect for pagination */
+.pagination li:hover {
+  text-decoration: underline;
+  color: #2980b9; /* Darker blue on hover */
+}
+
+/* Crypto Details styling */
+.crypto-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.crypto-info {
+  margin: 20px 0;
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: #3498db; /* Customize loading color */
+}
+
+.error {
+  color: red;
+  font-size: 1.2rem;
+}
+
+/* Adjust PriceChart styling if necessary */
